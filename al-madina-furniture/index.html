@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173b2b">
+  <title>Al Madina Furniture | Quality Furniture for Every Home</title>
+  <meta name="description" content="Discover elegant sofas, beds, dining tables and more at Al Madina Furniture. Quality furniture for your home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    Quality Furniture • Timeless Design • Made for Your Home
+  </div>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <span class="logo-icon">AM</span>
+      <span>AL MADINA <small>FURNITURE</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton">
+      🛒 Cart <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO AL MADINA</span>
+        <h1>Make Your House<br>Feel Like <em>Home.</em></h1>
+        <p>Beautiful furniture, thoughtful craftsmanship, and comfort that lasts for years.</p>
+        <div class="hero-actions">
+          <a href="#collections" class="btn btn-gold">Explore Collection ↗</a>
+          <a href="#about" class="btn btn-outline">Discover Our Story</a>
+        </div>
+        <div class="hero-note">
+          <span class="stars">★★★★★</span>
+          <span>Designed for living. Built for life.</span>
+        </div>
+      </div>
+      <div class="hero-label">COMFORT MEETS ELEGANCE</div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✦</span> Quality Craftsmanship</div>
+      <div><span>◇</span> Elegant Designs</div>
+      <div><span>✓</span> Customer First</div>
+      <div><span>♡</span> Made for Your Home</div>
+    </section>
+
+    <section class="section collections" id="collections">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FIND YOUR STYLE</span>
+          <h2>Furniture for <em>Every Moment</em></h2>
+          <p>Pieces that bring beauty, warmth and functionality into your home.</p>
+        </div>
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search furniture..." aria-label="Search furniture">
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All Furniture</button>
+        <button class="filter" data-category="Sofas">Sofas</button>
+        <button class="filter" data-category="Beds">Beds</button>
+        <button class="filter" data-category="Dining">Dining</button>
+        <button class="filter" data-category="Storage">Storage</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Products are added by script.js -->
+      </div>
+
+      <p class="empty-message" id="emptyMessage" hidden>No furniture found. Try another search.</p>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-image">
+        <img
+          src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+          alt="Warm, elegant modern living room"
+          loading="lazy">
+        <div class="image-caption">Thoughtfully chosen. Beautifully lived in.</div>
+      </div>
+      <div class="story-content">
+        <span class="eyebrow">THE AL MADINA PROMISE</span>
+        <h2>Your Home Deserves<br><em>Something Special.</em></h2>
+        <p>We believe furniture is more than what fills a room. It's where families gather, conversations happen, and memories are made.</p>
+        <p>Our collection brings together timeless style, everyday comfort and practical designs to help you create a home that feels uniquely yours.</p>
+        <a href="#collections" class="text-link">Explore our collection ↗</a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <span class="quote-mark">“</span>
+      <h2>Good furniture doesn't just fill a space.<br>It makes it <em>feel like yours.</em></h2>
+      <p>AL MADINA FURNITURE — MADE FOR LIVING</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <span class="eyebrow">LET'S TALK FURNITURE</span>
+        <h2>Ready to refresh<br><em>your space?</em></h2>
+        <p>Have a question about a product or want to place an order? Get in touch with our team.</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">✉</div>
+        <h3>We're here to help.</h3>
+        <p>Ask about prices, product availability, sizes and delivery.</p>
+        <a href="#" class="btn btn-green" id="contactWhatsApp">Chat on WhatsApp ↗</a>
+        <small>Update the WhatsApp number in script.js before publishing.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo footer-logo">
+      <span class="logo-icon">AM</span>
+      <span>AL MADINA <small>FURNITURE</small></span>
+    </a>
+    <p>Bringing comfort and character to your home.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="copyright">© <span id="year"></span> Al Madina Furniture. All rights reserved.</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart <span id="cartTitleCount">(0)</span></h2>
+      <button id="closeCart" class="close-button" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">Rs. 0</strong></div>
+      <button class="btn btn-green checkout-button" id="checkoutButton">Order on WhatsApp ↗</button>
+      <p>Your order will be sent to the shop via WhatsApp.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
